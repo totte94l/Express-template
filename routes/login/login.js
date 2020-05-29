@@ -1,4 +1,3 @@
-import express from 'express'
 /* 
     Login Route
 */
