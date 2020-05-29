@@ -12,7 +12,7 @@ var login = require('./routes/login')(app)
 
 // localhost:3000/
 app.get('/', function(req, res) {
-    res.write("hej")
+    res.write("Hello World from root")
     res.end();
 })
 
