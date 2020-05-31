@@ -1,10 +1,8 @@
-/* 
-    General Routes
-*/
+// General Routes example
 
 module.exports = function(app) {
-    app.get('/marky', function(req, res) {
-        res.write('New route')
+    app.get('/general', function(req, res) {
+        res.write('General route')
         res.end()
     })
 }

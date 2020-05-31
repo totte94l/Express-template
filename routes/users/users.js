@@ -1,7 +1,4 @@
-/* 
-    Users Route
-*/
-
+// Users Routes examples
 module.exports = function(app) {
     const users = [
         { id: "1", name: "Christoffer Cajander", age: 26, occupation: "Student" },
@@ -11,13 +8,15 @@ module.exports = function(app) {
 
     // Get all Users
     app.get('/allUsers', function(req, res) {
-
+        res.header("Access-Control-Allow-Origin", "localhost");
         // What we want to send back as a response
         const data = {
-            code: 200,
+            status: 200,
             data: users
         }
-        console.log(data)
+
+        console.log("Response: ", data)
+
         res.send(data)
     })
 
